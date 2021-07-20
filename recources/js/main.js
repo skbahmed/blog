@@ -7,6 +7,23 @@ AOS.init({
 });
 
 /* ------------------- */
+/* NAV STICKY */
+/* ------------------- */
+window.onscroll = function(){
+    stickyFunction()
+}
+let navbar = document.getElementById("header");
+let sticky = navbar.offsetTop;
+function stickyFunction(){
+    if(window.pageYOffset >= sticky){
+        navbar.classList.add('sticky')
+    }
+    else {
+        navbar.classList.remove('sticky')
+    }
+}
+
+/* ------------------- */
 /* NAV ACTIVATION */
 /* ------------------- */
 let collapse = document.querySelectorAll(".collapse");
@@ -30,7 +47,7 @@ activeIt.forEach(n => n.addEventListener('click', linkAction));
 /* MASONRY GRID SYSTEM */
 /* ------------------- */
 $('.grid').masonry({
-    itemSelector: '.grid-item',
+    itemSelector: '.grid-item'
 });
 
 /* ------------------- */
