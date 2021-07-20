@@ -1,27 +1,17 @@
 /* ------------------- */
+/* PRELOADER */
+/* ------------------- */
+setTimeout(function(){
+    $('.loader').fadeToggle();
+}, 1500);
+
+/* ------------------- */
 /* ANIMATE ON SCROLL */
 /* ------------------- */
 AOS.init({
     offset: 120,
     duration: 1500,
 });
-
-/* ------------------- */
-/* NAV STICKY */
-/* ------------------- */
-window.onscroll = function(){
-    stickyFunction()
-}
-let navbar = document.getElementById("header");
-let sticky = navbar.offsetTop;
-function stickyFunction(){
-    if(window.pageYOffset >= sticky){
-        navbar.classList.add('sticky')
-    }
-    else {
-        navbar.classList.remove('sticky')
-    }
-}
 
 /* ------------------- */
 /* NAV ACTIVATION */
