@@ -37,8 +37,7 @@ activeIt.forEach(n => n.addEventListener('click', linkAction));
 /* MASONRY GRID SYSTEM */
 /* ------------------- */
 new Masonry("#posts .grid", {
-    itemSelector : '.grid-item',
-    gutter : 20
+    itemSelector : '.grid-item'
 });
 
 /* ------------------- */

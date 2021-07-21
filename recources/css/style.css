@@ -388,7 +388,7 @@ header {
 }
 .grid-item {
     width: calc(33.3333% - 2rem);
-    margin-bottom: 3rem;
+    margin: 2rem 1rem;
 }
 span i {
     margin-right: 1rem;
