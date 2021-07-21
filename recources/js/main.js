@@ -77,4 +77,4 @@ new Swiper('.swiper-container', {
             slidesPerView: 5
         }
     }
-})
+});
