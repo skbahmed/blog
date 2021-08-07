@@ -82,12 +82,6 @@ ul li {
 .overflow-img {
     overflow: hidden;
 }
-.scale-1 {
-    transition: .2s linear;
-}
-.scale-1:hover {
-    transform: scale(1.1);
-}
 .box-shadow {
     box-shadow: 0 .8rem 2.4rem rgba(149, 157, 165, 0.2);
 }
@@ -221,20 +215,37 @@ main {
     z-index: 99999;
     top: 0;
 }
-.loader img {
-    width: 20rem;
+.loader-item {
     position: absolute;
-    top: calc(50% - 10rem);
-    left: calc(50% - 10rem);
-    animation: preloader 2s linear infinite;
-    border-radius: 50%;
+    top: calc(50%);
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.loader-progress {
+    margin-top: 2rem;
+    width: 25rem;
+    height: 1.3rem;
+    border: .1rem solid var(--dark);
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.loader-progress-animated {
+    width: 100%;
+    height: 100%;
+    background: var(--dark);
+    border-radius: 2rem;
+    animation: preloader 5s linear;
 }
 @keyframes preloader {
-    from {
-        transform: rotate(0);
+    0% {
+        width: 0%;
     }
-    to {
-        transform: rotate(360deg);
+    50% {
+        width: 70%;
+    }
+    100% {
+        width: 100%;
     }
 }
 
@@ -253,7 +264,8 @@ header {
     justify-content: space-between;
     padding: 1rem;
 }
-.nav-brand {
+.nav-brand,
+.loader-logo {
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
     align-self: center;
@@ -297,14 +309,46 @@ header {
 
 /* MAIN SECTION */
 #main {
-    margin-top: 4em;
+    margin-top: 6em;
 }
 .grid {
-    margin: 0 auto;
+    columns: 3;
+    margin-bottom: 3em;
 }
 .grid-item {
-    width: calc(33.3333% - 2rem);
-    margin: 2rem 1rem;
+    margin-bottom: 4rem;
+}
+.grid-img {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+.grid-img::before, .grid-img::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background: rgba(46, 46, 46, 0.9);
+    left: 0;
+    color: var(--secondary);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .4rem;
+    word-spacing: .5rem;
+    transition: height .3s linear;
+    align-items: flex-end;
+}
+.grid-img::before {
+    top: 0;
+}
+.grid-img::after {
+    content: "Read full article";
+    bottom: 0;
+}
+.grid-img:hover::before, .grid-img:hover::after {
+    height: 50%;
 }
 span i {
     margin-right: 1rem;

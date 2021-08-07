@@ -18,10 +18,16 @@ AOS.init({
 /* ------------------- */
 let collapse = document.querySelectorAll(".collapse");
 let toggle = document.querySelector(".toggle-button");
+
 toggle.addEventListener('click', function() {
     collapse.forEach(n => n.classList.toggle('collapse-toggle'));
     toggle.classList.toggle('toggle')
 });
+/* NAV REMOVE */
+// let removeNav = document.querySelectorAll('.removeNav');
+// removeNav.addEventListener('click', function(){
+//     collapse.classList.remove('collapse-toggle');
+// });
 
 /* ------------------- */
 /* LINK ACTIVATION */
@@ -32,13 +38,6 @@ function linkAction(){
     this.classList.add('active');
 }
 activeIt.forEach(n => n.addEventListener('click', linkAction));
-
-/* ------------------- */
-/* MASONRY GRID SYSTEM */
-/* ------------------- */
-new Masonry("#posts .grid", {
-    itemSelector : '.grid-item'
-});
 
 /* ------------------- */
 /* SWIPER LIBRARY INITIALIZE */

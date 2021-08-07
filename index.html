@@ -18,7 +18,12 @@
 <body>
     <!-- PRELOADER -->
     <div class="loader">
-        <img src="recources/images/preloader.png" alt="">
+        <div class="loader-item">
+            <div class="loader-logo text-dark">Blog</div>
+            <div class="loader-progress">
+                <div class="loader-progress-animated"></div>
+            </div>
+        </div>
     </div>
     <!-- HEADER SECTION -->
     <header id="header" class="box-shadow">
@@ -31,12 +36,12 @@
             </div>
             <div class="collapse">
                 <ul class="navbar-nav">
-                    <a href="/index.html" class="nav-link active-it active">home</a>
-                    <a href="#" class="nav-link active-it">blog</a>
-                    <a href="#" class="nav-link active-it">pages</a>
-                    <a href="#" class="nav-link active-it">categories</a>
-                    <a href="#" class="nav-link active-it">about</a>
-                    <a href="#" class="nav-link active-it">contact</a>
+                    <a href="/index.html" class="nav-link active-it active removeNav">home</a>
+                    <a href="#" class="nav-link active-it removeNav">blog</a>
+                    <a href="#" class="nav-link active-it removeNav">pages</a>
+                    <a href="#" class="nav-link active-it removeNav">categories</a>
+                    <a href="#" class="nav-link active-it removeNav">about</a>
+                    <a href="#" class="nav-link active-it removeNav">contact</a>
                 </ul>
             </div>
             <div class="collapse">
@@ -59,198 +64,169 @@
             <div class="container">
                 <div class="grid">
                     <div class="grid-item">
-                        <div class="card">
-                            <div class="overflow-img">
-                                <a href="/article.html">
-                                    <img src="recources/images/img1.jpg" class="img-fluid scale-1" alt="">
-                                </a>
-                            </div>
-                            <div class="card-body text-center px-1">
-                                <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
-                                <p class="secondary-title text-secondary display-3 my-2">
-                                    <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
-                                </p>
-                            </div>
+                        <a href="/article.html" class="overflow-img grid-img">
+                            <img src="recources/images/img1.jpg" class="img-fluid" alt="">
+                        </a>
+                        <div class="text-center px-1 grid-text">
+                            <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
+                            <p class="secondary-title text-secondary display-3 my-2">
+                                <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
+                            </p>
                         </div>
                     </div>
                     <div class="grid-item">
-                        <div class="card">
-                            <div class="overflow-img">
-                                <a href="/article.html">
-                                    <img src="recources/images/img2.jpg" class="img-fluid scale-1" alt="">
-                                </a>
-                            </div>
-                            <div class="card-body text-center px-1">
-                                <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
-                                <p class="secondary-title text-secondary display-3 my-2">
-                                    <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
-                                </p>
-                            </div>
+                        <a href="/article.html" class="overflow-img grid-img">
+                            <img src="recources/images/img3.jpg" class="img-fluid" alt="">
+                        </a>
+                        <div class="text-center px-1 grid-text">
+                            <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
+                            <p class="secondary-title text-secondary display-3 my-2">
+                                <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid-item">
+                        <a href="/article.html" class="overflow-img grid-img">
+                            <img src="recources/images/img3.jpg" class="img-fluid" alt="">
+                        </a>
+                        <div class="text-center px-1 grid-text">
+                            <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
+                            <p class="secondary-title text-secondary display-3 my-2">
+                                <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
+                            </p>
                         </div>
                     </div>
                     <div class="grid-item">
-                        <div class="card">
-                            <div class="overflow-img">
-                                <a href="/article.html">
-                                    <img src="recources/images/img3.jpg" class="img-fluid scale-1" alt="">
-                                </a>
-                            </div>
-                            <div class="card-body text-center px-1">
-                                <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
-                                <p class="secondary-title text-secondary display-3 my-2">
-                                    <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
-                                </p>
-                            </div>
+                        <a href="/article.html" class="overflow-img grid-img">
+                            <img src="recources/images/img10.jpg" class="img-fluid" alt="">
+                        </a>
+                        <div class="text-center px-1 grid-text">
+                            <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
+                            <p class="secondary-title text-secondary display-3 my-2">
+                                <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
+                            </p>
                         </div>
                     </div>
                     <div class="grid-item">
-                        <div class="card">
-                            <div class="overflow-img">
-                                <a href="/article.html">
-                                    <img src="recources/images/img4.jpg" class="img-fluid scale-1" alt="">
-                                </a>
-                            </div>
-                            <div class="card-body text-center px-1">
-                                <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
-                                <p class="secondary-title text-secondary display-3 my-2">
-                                    <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
-                                </p>
-                            </div>
+                        <a href="/article.html" class="overflow-img grid-img">
+                            <img src="recources/images/img2.jpg" class="img-fluid" alt="">
+                        </a>
+                        <div class="text-center px-1 grid-text">
+                            <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
+                            <p class="secondary-title text-secondary display-3 my-2">
+                                <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
+                            </p>
                         </div>
                     </div>
                     <div class="grid-item">
-                        <div class="card">
-                            <div class="overflow-img">
-                                <a href="/article.html">
-                                    <img src="recources/images/img5.jpg" class="img-fluid scale-1" alt="">
-                                </a>
-                            </div>
-                            <div class="card-body text-center px-1">
-                                <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
-                                <p class="secondary-title text-secondary display-3 my-2">
-                                    <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
-                                </p>
-                            </div>
+                        <a href="/article.html" class="overflow-img grid-img">
+                            <img src="recources/images/img11.jpg" class="img-fluid" alt="">
+                        </a>
+                        <div class="text-center px-1 grid-text">
+                            <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
+                            <p class="secondary-title text-secondary display-3 my-2">
+                                <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
+                            </p>
                         </div>
                     </div>
                     <div class="grid-item">
-                        <div class="card">
-                            <div class="overflow-img">
-                                <a href="/article.html">
-                                    <img src="recources/images/img6.jpg" class="img-fluid scale-1" alt="">
-                                </a>
-                            </div>
-                            <div class="card-body text-center px-1">
-                                <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
-                                <p class="secondary-title text-secondary display-3 my-2">
-                                    <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
-                                </p>
-                            </div>
+                        <a href="/article.html" class="overflow-img grid-img">
+                            <img src="recources/images/img7.jpg" class="img-fluid" alt="">
+                        </a>
+                        <div class="text-center px-1 grid-text">
+                            <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
+                            <p class="secondary-title text-secondary display-3 my-2">
+                                <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
+                            </p>
                         </div>
                     </div>
                     <div class="grid-item">
-                        <div class="card">
-                            <div class="overflow-img">
-                                <a href="/article.html">
-                                    <img src="recources/images/img7.jpg" class="img-fluid scale-1" alt="">
-                                </a>
-                            </div>
-                            <div class="card-body text-center px-1">
-                                <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
-                                <p class="secondary-title text-secondary display-3 my-2">
-                                    <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
-                                </p>
-                            </div>
+                        <a href="/article.html" class="overflow-img grid-img">
+                            <img src="recources/images/img5.jpg" class="img-fluid" alt="">
+                        </a>
+                        <div class="text-center px-1 grid-text">
+                            <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
+                            <p class="secondary-title text-secondary display-3 my-2">
+                                <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
+                            </p>
                         </div>
                     </div>
                     <div class="grid-item">
-                        <div class="card">
-                            <div class="overflow-img">
-                                <a href="/article.html">
-                                    <img src="recources/images/img8.jpg" class="img-fluid scale-1" alt="">
-                                </a>
-                            </div>
-                            <div class="card-body text-center px-1">
-                                <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
-                                <p class="secondary-title text-secondary display-3 my-2">
-                                    <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
-                                </p>
-                            </div>
+                        <a href="/article.html" class="overflow-img grid-img">
+                            <img src="recources/images/img11.jpg" class="img-fluid" alt="">
+                        </a>
+                        <div class="text-center px-1 grid-text">
+                            <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
+                            <p class="secondary-title text-secondary display-3 my-2">
+                                <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
+                            </p>
                         </div>
                     </div>
                     <div class="grid-item">
-                        <div class="card">
-                            <div class="overflow-img">
-                                <a href="/article.html">
-                                    <img src="recources/images/img9.jpg" class="img-fluid scale-1" alt="">
-                                </a>
-                            </div>
-                            <div class="card-body text-center px-1">
-                                <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
-                                <p class="secondary-title text-secondary display-3 my-2">
-                                    <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
-                                </p>
-                            </div>
+                        <a href="/article.html" class="overflow-img grid-img">
+                            <img src="recources/images/img9.jpg" class="img-fluid" alt="">
+                        </a>
+                        <div class="text-center px-1 grid-text">
+                            <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
+                            <p class="secondary-title text-secondary display-3 my-2">
+                                <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
+                            </p>
                         </div>
                     </div>
                     <div class="grid-item">
-                        <div class="card">
-                            <div class="overflow-img">
-                                <a href="/article.html">
-                                    <img src="recources/images/img10.jpg" class="img-fluid scale-1" alt="">
-                                </a>
-                            </div>
-                            <div class="card-body text-center px-1">
-                                <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
-                                <p class="secondary-title text-secondary display-3 my-2">
-                                    <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
-                                </p>
-                            </div>
+                        <a href="/article.html" class="overflow-img grid-img">
+                            <img src="recources/images/img4.jpg" class="img-fluid" alt="">
+                        </a>
+                        <div class="text-center px-1 grid-text">
+                            <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
+                            <p class="secondary-title text-secondary display-3 my-2">
+                                <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
+                            </p>
                         </div>
                     </div>
                     <div class="grid-item">
-                        <div class="card">
-                            <div class="overflow-img">
-                                <a href="/article.html">
-                                    <img src="recources/images/img11.jpg" class="img-fluid scale-1" alt="">
-                                </a>
-                            </div>
-                            <div class="card-body text-center px-1">
-                                <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
-                                <p class="secondary-title text-secondary display-3 my-2">
-                                    <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
-                                </p>
-                            </div>
+                        <a href="/article.html" class="overflow-img grid-img">
+                            <img src="recources/images/img12.jpg" class="img-fluid" alt="">
+                        </a>
+                        <div class="text-center px-1 grid-text">
+                            <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
+                            <p class="secondary-title text-secondary display-3 my-2">
+                                <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
+                            </p>
                         </div>
                     </div>
                     <div class="grid-item">
-                        <div class="card">
-                            <div class="overflow-img">
-                                <a href="/article.html">
-                                    <img src="recources/images/img12.jpg" class="img-fluid scale-1" alt="">
-                                </a>
-                            </div>
-                            <div class="card-body text-center px-1">
-                                <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
-                                <p class="secondary-title text-secondary display-3 my-2">
-                                    <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
-                                </p>
-                            </div>
+                        <a href="/article.html" class="overflow-img grid-img">
+                            <img src="recources/images/img8.jpg" class="img-fluid" alt="">
+                        </a>
+                        <div class="text-center px-1 grid-text">
+                            <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
+                            <p class="secondary-title text-secondary display-3 my-2">
+                                <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
+                            </p>
                         </div>
                     </div>
                     <div class="grid-item">
-                        <div class="card">
-                            <div class="overflow-img">
-                                <a href="/article.html">
-                                    <img src="recources/images/img13.jpg" class="img-fluid scale-1" alt="">
-                                </a>
-                            </div>
-                            <div class="card-body text-center px-1">
-                                <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
-                                <p class="secondary-title text-secondary display-3 my-2">
-                                    <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
-                                </p>
-                            </div>
+                        <a href="/article.html" class="overflow-img grid-img">
+                            <img src="recources/images/img13.jpg" class="img-fluid" alt="">
+                        </a>
+                        <div class="text-center px-1 grid-text">
+                            <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
+                            <p class="secondary-title text-secondary display-3 my-2">
+                                <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <a href="/article.html" class="overflow-img grid-img">
+                            <img src="recources/images/img6.jpg" class="img-fluid" alt="">
+                        </a>
+                        <div class="text-center px-1 grid-text">
+                            <a href="/article.html" class="text-title display-1 text-dark">Looking for some feedback for this rejected track technology</a>
+                            <p class="secondary-title text-secondary display-3 my-2">
+                                <span><i class="far fa-clock text-primary"></i>Clock Wed 02, 2021</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -407,7 +383,6 @@
     <script src="vendors/js/html5shiv.min.js"></script>
     <script src="vendors/js/respond.min.js"></script>
     <script src="vendors/js/selectivizr.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
     <!-- RECOURCES JS -->
     <script src="recources/js/main.js"></script>

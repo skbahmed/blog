@@ -29,9 +29,17 @@
         justify-content: space-between;
     }
 }
+@media only screen and (max-width: 1080px) {
+    .grid-text .display-1 {
+        font-size: 2rem;
+    }
+}
 @media only screen and (max-width: 992px) {
     main {
         padding-top: 8rem;
+    }
+    .grid-text .display-1 {
+        font-size: 1.65rem;
     }
     .navbar {
         flex-direction: column;
@@ -45,8 +53,11 @@
     .row {
         flex-wrap: wrap;
     }
-    .grid-item {
-        width: calc(50% - 2rem);
+    .grid-text .display-1 {
+        font-size: 1.8rem;
+    }
+    .grid {
+        columns: 2;
     }
     .swiper-button-next, .swiper-button-prev {
         display: none;
@@ -96,8 +107,11 @@
     .collapse-toggle {
         max-height: 50rem;
     }
-    .grid-item {
-        width: calc(100% - 2rem);
+    .grid {
+        columns: 1;
+    }
+    .grid-text .display-1 {
+        font-size: 2.2rem;
     }
     .post-footer .comment-reply {
         padding-left: 2em;
