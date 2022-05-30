@@ -1,5 +1,4 @@
-# Sakib Ahmed
-Blog Demo
+# <p align="center"> Blog Demo </p>
 <br>
 Used : HTML, CSS, JAVASCRIPT, JQUERY
 <br>
